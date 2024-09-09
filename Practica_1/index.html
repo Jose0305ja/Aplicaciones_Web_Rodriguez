@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera Página</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconect" href="https://fonts.googleapis.com" />
+    <link rel="preconect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=handjet:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="Logo_Utd.png"
+      alt="Logo de la UTD"
+      width="200"
+      style="display: block; margin: auto"
+    />
+
+    <!-- Barra de navegacion -->
+    <nav>
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Sobre_mi">Sobre mi</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!--Sección Principal -->
+    <section id="Inicio">
+      <h1>Pagina Con Informacion Sobre Mi</h1>
+      <p>
+        En esta pagina encontraremos informacion sobre mi, la cual es mi primera
+        pagina en HTML y CSS.
+      </p>
+    </section>
+
+    <!-- Sección "Sobre Mi" -->
+    <section id="Sobre_mi">
+      <h2>Sobre Mi</h2>
+      <ul>
+        <li>Mi nombre es José Antonio Rodriguez Rivera</li>
+        <li>Tengo 19 años</li>
+        <li>Mi color favorito es el color azul cielo</li>
+      </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="Contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <div
+      style="
+        width: 300;
+        height: auto;
+        background-color: brown;
+        text-align: center;
+        padding: 20px;
+        font-family: Playwrite CU, sans-serif;
+        color: aqua;
+      "
+    >
+      Información Sobre mi
+    </div>
+  </body>
+</html>
