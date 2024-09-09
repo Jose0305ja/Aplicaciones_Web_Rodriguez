@@ -64,3 +64,12 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+.pag-div{
+    width: 300;
+    height: auto;
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+    font-family: Playwrite CU, sans-serif;
+    color: aqua;
+}
