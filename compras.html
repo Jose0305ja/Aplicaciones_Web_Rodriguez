@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprar Producto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconect" href="https://fonts.googleapis.com" />
+    <link rel="preconect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=handjet:wght@100..900&family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="encabezado"></div>
+      <nav>
+        <ul>
+          <li><a href="#Inicio">Inicio</a></li>
+          <li><a href="#quienes-somos">Quienes somos</a></li>
+          <li><a href="#galeria-productos">Productos</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <!--Cambiar imagenes -->
+      <div class="slider">
+        <img src="assets/imagenes/ford.jpg" alt="Portada 1" class="slide" />
+        <img src="assets/imagenes/gmc.jpg" alt="Portada 2" class="slide" />
+        <img src="assets/imagenes/kia.jpg" alt="Portada 3" class="slide" />
+      </div>
+    </div>
+    <script>
+      //Obtener el valor del parametro URL
+      const ParametroURL = new URLSearchParams(window.location.search);
+      const id_producto = parseInt(ParametroURL.get('id_producto'),10);
+
+      
+      //Datos del producto
+      const producto = {
+        1: {
+          nombre: "Camioneta 1",
+          imagen: "assets/imagen1.jpg",
+          descripcion: "Descripcion del producto", //cambiar descrpcion y nombre
+          precio: "$1,499"
+        },
+        2: {
+          nombre: "Camioneta 1",
+          imagen: "assets/imagen1.jpg",
+          descripcion: "Descripcion del producto", //cambiar descrpcion y nombre
+          precio: "$1,499"
+        },
+        3: {
+          nombre: "Camioneta 1",
+          imagen: "assets/imagen1.jpg",
+          descripcion: "Descripcion del producto", //cambiar descrpcion y nombre
+          precio: "$1,499"
+        },
+      };
+    </script>
+  </body>
+</html>
